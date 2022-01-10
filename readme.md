@@ -1,4 +1,4 @@
-# Using the TaxBandits API with C#
+# Using the TaxBandits OAuth API with C#
 ***
 TaxBandits OAuth API SDK written on C# in .Net Core framework to show how to integrate with TaxBandits API. This covers the following API endpoints:
 ### Business
