@@ -67,12 +67,10 @@ namespace JWTAuth
                                 if (apiResponse != null && apiResponse.IsSuccessStatusCode)
                                 {
                                     //Read response from TaxBandits API
-                                    var listResponse = apiResponse.Content.ReadAsAsync<BusinessListResponse>().Result;
+                                    BusinessListResponse listResponse = apiResponse.Content.ReadAsAsync<BusinessListResponse>().Result;
                                     if (listResponse != null)
                                     {
-                                        BusinessListResponse fullList = new BusinessListResponse();
-                                        fullList = listResponse;
-                                        Console.WriteLine("No of Businesses: "+ fullList.TotalRecords.ToString());
+                                        Console.WriteLine("No of Businesses: "+ listResponse.TotalRecords.ToString());
                                     }
                                     else
                                     {
